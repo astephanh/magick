@@ -79,6 +79,9 @@ do
       gtype = assert(gravity:to_int(gtype), "invalid gravity type")
       return lib.MagickSetImageGravity(self.wand, gtype)
     end,
+    trim = function(self)
+      return lib.MagickTrimImage(self.wand, 10)
+    end,
     strip = function(self)
       return lib.MagickStripImage(self.wand)
     end,

@@ -69,6 +69,8 @@ ffi.cdef([[  typedef void MagickWand;
 
   MagickBooleanType MagickStripImage(MagickWand *wand);
 
+  MagickBooleanType MagickTrimImage(MagickWand *wand, const double fuzz);
+
   MagickBooleanType MagickGetImagePixelColor(MagickWand *wand,
     const ssize_t x,const ssize_t y,PixelWand *color);
 

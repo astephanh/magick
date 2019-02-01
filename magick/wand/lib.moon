@@ -73,6 +73,8 @@ ffi.cdef [[
 
   MagickBooleanType MagickStripImage(MagickWand *wand);
 
+  MagickBooleanType MagickTrimImage(MagickWand *wand);
+
   MagickBooleanType MagickGetImagePixelColor(MagickWand *wand,
     const ssize_t x,const ssize_t y,PixelWand *color);
 
